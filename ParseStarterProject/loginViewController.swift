@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+//        PFUser.logOut()
         
         if let username = PFUser.currentUser()?.username {
             print(username + " is logged in")

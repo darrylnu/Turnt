@@ -1,5 +1,5 @@
 //
-//  signupViewController.swift
+//  ProfileViewController.swift
 //  Turnt
 //
 //  Created by Darryl Nunn on 3/31/16.
@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Parse
+import ParseFacebookUtilsV4
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class signupViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
