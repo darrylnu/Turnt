@@ -10,7 +10,6 @@
 		170C2E151CAC98E1007E44C8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C2E131CAC98E1007E44C8 /* FBSDKCoreKit.framework */; };
 		170C2E161CAC98E1007E44C8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C2E141CAC98E1007E44C8 /* FBSDKLoginKit.framework */; };
 		170C2E191CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C2E181CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework */; };
-		1788438F1CACDB0E00D0B422 /* facebook-login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1788438E1CACDB0E00D0B422 /* facebook-login-button.png */; };
 		178843911CACDBA300D0B422 /* signup-with-facebook-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 178843901CACDBA300D0B422 /* signup-with-facebook-button.png */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
@@ -29,7 +28,6 @@
 		170C2E141CAC98E1007E44C8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		170C2E171CAC9E41007E44C8 /* Turnt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turnt-Bridging-Header.h"; sourceTree = "<group>"; };
 		170C2E181CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		1788438E1CACDB0E00D0B422 /* facebook-login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-login-button.png"; sourceTree = "<group>"; };
 		178843901CACDBA300D0B422 /* signup-with-facebook-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signup-with-facebook-button.png"; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				170C2E171CAC9E41007E44C8 /* Turnt-Bridging-Header.h */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
-				1788438E1CACDB0E00D0B422 /* facebook-login-button.png */,
 				178843901CACDBA300D0B422 /* signup-with-facebook-button.png */,
 			);
 			path = Resources;
@@ -189,7 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1788438F1CACDB0E00D0B422 /* facebook-login-button.png in Resources */,
 				178843911CACDBA300D0B422 /* signup-with-facebook-button.png in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
