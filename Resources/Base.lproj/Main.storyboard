@@ -17,17 +17,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHa-5V-nfD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turnt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22V-kh-p3q">
+                                <rect key="frame" x="280" y="78" width="41" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="SBw-mc-9jK"/>
+                                    <constraint firstAttribute="height" constant="21" id="g0L-cg-8h1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHa-5V-nfD">
                                 <rect key="frame" x="150" y="382" width="301" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="Q6v-fS-uHF"/>
+                                    <constraint firstAttribute="height" constant="65" id="frI-HM-bji"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="signup-with-facebook-button.png"/>
+                                <connections>
+                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPq-I2-WC8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HHa-5V-nfD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4St-wr-QoH"/>
+                            <constraint firstItem="22V-kh-p3q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="58u-ax-Rz5"/>
+                            <constraint firstItem="22V-kh-p3q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="60d-be-Rfd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HHa-5V-nfD" secondAttribute="bottom" constant="153" id="bG8-jG-noa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="eVg-O4-7AE" kind="show" identifier="showSigninScreen" id="cI2-2J-gnG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="405"/>
+        </scene>
+        <!--signupView-->
+        <scene sceneID="WTb-ue-fMA">
+            <objects>
+                <viewController title="signupView" id="eVg-O4-7AE" customClass="signupViewController" customModule="Turnt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MWL-5z-9LH"/>
+                        <viewControllerLayoutGuide type="bottom" id="D4F-Zy-8Xr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZH-nK-4a8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8c-wO-nSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="394"/>
         </scene>
     </scenes>
     <resources>

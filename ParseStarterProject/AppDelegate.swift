@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ParseMutableClientConfiguration.clientKey = "myMasterKey"
             ParseMutableClientConfiguration.server = "http://trnt.herokuapp.com/parse" })
         
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+       
 
         Parse.initializeWithConfiguration(parseConfiguration)
 
@@ -76,8 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
             }
             
-            return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+           
         }
+        
+        
 
         //
         //  Swift 1.2
@@ -104,8 +106,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //            let types: UIRemoteNotificationType = [.Alert, .Badge, .Sound]
         //            application.registerForRemoteNotificationTypes(types)
         //        }
+        
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
 
-        return true
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+         return true
     }
 
     //--------------------------------------
