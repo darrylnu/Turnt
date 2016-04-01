@@ -12,6 +12,8 @@
 		170C2E191CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C2E181CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework */; };
 		1744907A1CAE0C4100C9F932 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174490791CAE0C4100C9F932 /* SignUpViewController.swift */; };
 		1764BAE21CAE1607006D350C /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764BAE11CAE1607006D350C /* AddEventViewController.swift */; };
+		1764BAE41CAE2140006D350C /* okayUI-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1764BAE31CAE2140006D350C /* okayUI-button.png */; };
+		1764BAE61CAE2597006D350C /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1764BAE51CAE2597006D350C /* Placeholder.png */; };
 		178843911CACDBA300D0B422 /* signup-with-facebook-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 178843901CACDBA300D0B422 /* signup-with-facebook-button.png */; };
 		178843951CAD054B00D0B422 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178843941CAD054B00D0B422 /* MapViewController.swift */; };
 		178843971CAD12AE00D0B422 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178843961CAD12AE00D0B422 /* Launch Screen.storyboard */; };
@@ -45,6 +47,8 @@
 		170C2E181CAC9F8B007E44C8 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		174490791CAE0C4100C9F932 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1764BAE11CAE1607006D350C /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		1764BAE31CAE2140006D350C /* okayUI-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "okayUI-button.png"; sourceTree = "<group>"; };
+		1764BAE51CAE2597006D350C /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		178843901CACDBA300D0B422 /* signup-with-facebook-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signup-with-facebook-button.png"; sourceTree = "<group>"; };
 		178843941CAD054B00D0B422 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		178843961CAD12AE00D0B422 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -101,9 +105,11 @@
 				170C2E171CAC9E41007E44C8 /* Turnt-Bridging-Header.h */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
+				1764BAE51CAE2597006D350C /* Placeholder.png */,
 				178843901CACDBA300D0B422 /* signup-with-facebook-button.png */,
 				178843AA1CAD2A9400D0B422 /* map-pin.png */,
 				178843B41CADE5E400D0B422 /* smiley-smile.png */,
+				1764BAE31CAE2140006D350C /* okayUI-button.png */,
 				178843A01CAD227D00D0B422 /* Drawing (4).png */,
 				178843A41CAD23F000D0B422 /* party2.jpg */,
 				178843A81CAD29EF00D0B422 /* paper-map-7.png */,
@@ -232,10 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1764BAE41CAE2140006D350C /* okayUI-button.png in Resources */,
 				178843911CACDBA300D0B422 /* signup-with-facebook-button.png in Resources */,
 				178843B51CADE5E400D0B422 /* smiley-smile.png in Resources */,
 				178843A91CAD29EF00D0B422 /* paper-map-7.png in Resources */,
 				178843AD1CAD2B1000D0B422 /* photo.png in Resources */,
+				1764BAE61CAE2597006D350C /* Placeholder.png in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				178843971CAD12AE00D0B422 /* Launch Screen.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,

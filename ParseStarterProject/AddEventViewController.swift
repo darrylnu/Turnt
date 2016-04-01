@@ -10,8 +10,27 @@ import UIKit
 
 class AddEventViewController: UIViewController {
 
+    @IBOutlet var eventImage: UIImageView!
+    
+    @IBAction func addFlyer(sender: AnyObject) {
+    }
+    @IBOutlet var eventTime: UITextField!
+    @IBOutlet var eventName: UITextField!
+    @IBOutlet var eventAges: UITextField!
+    @IBOutlet var eventMusic: UITextField!
+    @IBOutlet var eventDate: UITextField!
+    @IBOutlet var eventState: UITextField!
+    @IBOutlet var eventCity: UITextField!
+    @IBOutlet var eventStreet: UITextField!
+    
+    @IBAction func submitButton(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(PFUser.currentUser()?["name"])
+        
+        
 
         // Do any additional setup after loading the view.
     }
