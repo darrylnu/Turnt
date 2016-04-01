@@ -18,6 +18,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //gets access to users location
         locationManager.delegate = self
         if #available(iOS 8.0, *) {
@@ -27,6 +28,45 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         locationManager.startUpdatingLocation()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        let query = PFQuery(className: "Events")
+        query.whereKeyExists("address")
+        query.findObjectsInBackgroundWithBlock { (object, error) in
+            if error != nil {
+                print(error)
+            } else {
+                dispatch_async(dispatch_get_main_queue()) {
+                   
+                
+                if let event = object {
+                    for events in event {
+                        var geocoder = CLGeocoder()
+
+                        
+                        let address = events["address"] as! String
+                        let date = events["date"] as! String
+                        let time = events["time"] as! String
+                        let name = events["name"] as! String
+                        let music = events["music"] as! String
+                        let ages = events["ages"] as! String
+                        geocoder.geocodeAddressString(address) { (placemarks, error) in
+                            if let placemark = placemarks![0] as? CLPlacemark {
+                                var annotation = MKPointAnnotation()
+                                annotation.title = "\(name) @ \(time) on \(date)"
+                                annotation.subtitle = "Playing \(music) for \(ages) year olds"
+                                annotation.coordinate = (placemark.location?.coordinate)!
+                                self.map.addAnnotation(annotation)
+                            }
+                        }
+
+                        
+                    }
+                    
+                    
+                }
+            }
+            }
+        }
         
 
         // Do any additional setup after loading the view.
@@ -52,6 +92,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
