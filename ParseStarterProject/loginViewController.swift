@@ -13,6 +13,7 @@ import ParseFacebookUtilsV4
 import FBSDKCoreKit
 import FBSDKLoginKit
 
+
 class ViewController: UIViewController {
 
     @IBAction func signupButton(sender: AnyObject) {
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
 //        PFUser.logOut()
+        
         
         if let username = PFUser.currentUser()?.username {
             print(username + " is logged in")
