@@ -21,7 +21,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(userLabel.text)
         
         if userLabel.text == "" {
             
@@ -31,7 +30,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if error != nil {
                     print(error)
                 } else if let result = result {
-                    print(result)
                     PFUser.currentUser()?["name"] = String(result["name"])
                     self.userLabel.text = String(result["name"])
                     

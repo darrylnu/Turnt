@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class AddEventViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
     
     var activityIndicator = UIActivityIndicatorView()
 
@@ -84,7 +84,6 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
             self.activityIndicator.stopAnimating()
             UIApplication.sharedApplication().endIgnoringInteractionEvents()
             if error == nil {
-                print("success")
                 self.postedAlerter("Post Successful", message: "Turn up!", addAction: "Bet")
                 self.eventImage.image = UIImage(named: "Placeholder.png")
                 self.eventStreet.text = ""
@@ -130,11 +129,23 @@ class AddEventViewController: UIViewController, UINavigationControllerDelegate, 
         }
         
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField:UITextField!) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(PFUser.currentUser()?["name"])
         
         
 

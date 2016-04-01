@@ -35,7 +35,6 @@ class SignUpViewController: UIViewController {
             if error != nil {
                 print(error)
             } else if let result = result {
-                print(result)
                 PFUser.currentUser()?["name"] = String(result["name"])
                 self.userLabel.text = String(result["name"])
                 
